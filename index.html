@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shit Happens</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+          <link rel="stylesheet" href="stylesheet2.css" type="text/css" charset="utf-8" />
+    </head>
+    <body>
+
+        <div class="container">
+
+<!--this is the first chart-->
+          <h4 style="text-align:center">When Friends Shit Together <br><span style="font-weight: lighter"> Shit Happens</span></h4>
+
+
+            <canvas id="myChartShit"></canvas>
+          <h6 style="text-align:center"><span style="background-color:blue;color:white">Blondy</span>
+          <span style="background-color:red;color:white">Boss</span>
+          <span style="background-color:yellow;color:blue">luckyboy</span>
+          <span style="background-color:hotpink; color:white">Magnet</span></h6>
+
+            <script>
+            let myChartShit = document.getElementById("myChartShit").getContext('2d');
+
+            let chartShit = new Chart(myChartShit,{
+              type: 'bubble',
+
+              data:{
+                  datasets:[{
+                    //labels: ["Donations received in December"],
+                    //blue: blondie, red:boss, yellow:luckyboy, hotpink:magnet
+
+                    data: [
+                      //blondie
+                      {x:1, y:13.37, r:5},{x:2, y:16, r:5},{x:3, y:17.09, r:5},
+                      {x:4, y:14.15, r:5},{x:6, y:8.52, r:5},
+                      {x:7, y:11.25, r:5},{x:7, y:18.02, r:5},{x:9, y:12.03, r:5},
+                      //boss
+                      {x:4, y:12.95, r:5},{x:4, y:17.11, r:5},{x:5, y:13.32, r:5},
+                      {x:5, y:18.36, r:5},{x:9, y:18.01, r:5},
+                      //luckyboy
+                      {x:1, y:7.30, r:5},{x:1, y:9.58, r:5},{x:1, y:12.52, r:5},
+                      {x:2, y:8.48, r:5},{x:2, y:13.30, r:5},{x:3, y:12.43, r:5},
+                      {x:3, y:19.05, r:5},{x:4, y:10.55, r:5},{x:4, y:12.34, r:5},
+                      {x:4, y:18.05, r:5},{x:5, y:12, r:5},
+                      {x:6, y:12.45, r:5},{x:6, y:22.14, r:5},{x:7, y:17.32, r:5},
+                      {x:8, y:15.30, r:5},{x:9, y:7.50, r:5},{x:9, y:17.22, r:5},
+                      //magnet
+                      {x:2, y:9.15, r:5},{x:2, y:16.50, r:5},{x:3, y:9.20, r:5},
+                      {x:4, y:12.08, r:5},{x:4, y:17.52, r:5},{x:5, y:11.30, r:5},
+                      {x:6, y:7.20, r:5},{x:6, y:13.06, r:5},{x:6, y:15.20, r:5},
+                      {x:7, y:10.27, r:5},{x:8, y:9.10, r:5},{x:8, y:23.40, r:5},
+                      {x:9, y:9.30, r:5},{x:9, y:14.30, r:5},{x:9, y:23.55, r:5},
+
+                    ],
+                    backgroundColor: ['blue','blue', 'blue','blue', 'blue'
+                                      ,'blue', 'blue','blue',
+                                      'red', 'red','red', 'red','red',
+                                      'yellow','yellow','yellow','yellow','yellow',
+                                      'yellow','yellow','yellow','yellow','yellow',
+                                      'yellow','yellow','yellow','yellow','yellow',
+                                      'yellow','yellow',
+                                      'hotpink','hotpink','hotpink','hotpink','hotpink',
+                                      'hotpink','hotpink','hotpink','hotpink','hotpink',
+                                      'hotpink','hotpink','hotpink','hotpink','hotpink',
+                                      ],
+
+                }]
+              },
+
+              options:{
+                title: {
+                    text:'',
+                    diplay: true,
+                  },
+                  legend: {
+                    display:false,
+                    position:'right',
+                  },
+
+                  layout: {
+                              padding: {
+                                  left: 0,
+                                  right: 40,
+                                  top: 40,
+                                  bottom: 15
+                              }
+                          },
+
+                  scales: {
+                              yAxes : [{
+                                  ticks : {
+                                      min : 0,
+                                      max:24,
+                                      disply:true,
+                                      stepSize:2,
+                                      padding:10
+                                      },
+                                  gridLines: {
+                                    display: false}
+                              }],
+                              xAxes : [{
+                                  ticks : {
+                                      min :0,
+                                      max:9,
+                                      stepSize:1,
+                                  },
+                                  gridLines: {
+                                    display: false}
+                              }],
+                          }
+
+              }
+
+            })
+            </script>
+
+                        <p>
+                           x Axis: day of the shit. <br> y Axis: time of the shit.
+                        </p>
+
+          <div class="separatorColorContainer">
+            <div id="separatorColor_bis">Transparent
+            <div id="separatorColor">Everybody Shits.<br> Shit is Equality.</div>
+          </div>
+          </div>
+<!--second shit graph-->
+<h4 style="text-align:center">Shit Pie <br> <span style="font-weight: lighter"> Data Expressed in absolute number of recorded shits</span></h4>
+
+<!--<div class="row">
+  <div class="col-12 chart"> -->
+  <canvas id="myChartSh2"></canvas>
+  <h6 style="text-align:center">To be noticed: the shape ☮</h6>
+<!--</div>
+</div>-->
+
+<style>
+
+</style>
+  <script>
+  let labelsSh2 = ['Blondie', 'Boss', 'luckyboy', 'Magnet']
+  let dataSh2= [8, 5,17,15];
+  let colorsSh2 = ['blue', 'red','yellow','hotpink'];
+
+  let myChartSh2 = document.getElementById("myChartSh2").getContext('2d');
+
+  let chartSh2 = new Chart(myChartSh2,{
+    type: 'pie',
+    data:{
+      labels: labelsSh2,
+      datasets: [{
+        data:dataSh2,
+        backgroundColor: colorsSh2,
+      }]
+    },
+
+    options:{
+      title: {
+          text:'',
+          diplay: false,
+        },
+        legend: {
+          display:true
+        }
+    }
+
+  })
+  </script>
+  <p>
+    Please bear in mind that the color of the graph does not attempt in any way to reproduce the color of the real shit.
+  </p>
+<!--end of second shit graph-->
+
+<div class="separatorColorContainer">
+  <div id="separatorColor2_bis"> Transparent
+  <div id="separatorColor2">You can shit anywhere. <br>Shit is Freedom.</div>
+  </div>
+</div>
+
+<!-- start of third shit graph -->
+<h4 style="text-align:center">Piles of Shit<br> <span style="font-weight: lighter">Data expressed in total shit points</span></h4>
+
+
+  <canvas id="myChartSh3"></canvas>
+<h6 style= "text-align: center">Quantity does not mean quality. The quality assessment might come at a later stage</h6>
+<style>
+
+</style>
+  <script>
+  let labelsSh3 = ['Blondie', 'Boss', 'luckyboy', 'Magnet', 'Total']
+  let dataSh3= [8, 5, 17, 15, 45];
+  let colorsSh3 = ['blue', 'red', 'yellow', 'hotpink', 'black'];
+
+  let myChartSh3 = document.getElementById("myChartSh3").getContext('2d');
+
+  let chartSh3 = new Chart(myChartSh3,{
+    type: 'bar',
+    data:{
+      labels: labelsSh3,
+      datasets: [{
+        data:dataSh3,
+        backgroundColor: colorsSh3,
+      }]
+    },
+
+    options:{
+      title: {
+          text:'',
+          diplay: false,
+        },
+        legend: {
+          display:false
+        },
+
+        scales: {
+                    yAxes : [{
+                        ticks : {
+
+                            min : 0
+                        }
+                    }]
+                }
+    },
+
+
+  })
+  </script>
+
+
+<!-- end of third shit graph -->
+<div class="separatorColorContainer">
+<div id="separatorColor3_bis">Transparent
+<div id="separatorColor3">Make shit.<br> Not war.</div>
+</div>
+</div>
+
+<!-- start of fourth shit graph -->
+<h4 style="text-align:center">Missed Shit Points<br><span style="font-weight: lighter">% of reporting</span></h4>
+
+  <canvas id="myChart7"></canvas>
+  <h6 style= "text-align:center">Not everybody records 100% of their shit. But everybody shits 100% of their shit.</h6>
+<!--</div>
+</div>-->
+
+<style>
+
+</style>
+  <script>
+  let labels7 = ['Blondie', 'Boss','luckyboy', 'Magnet']
+  let data7= [85, 30, 100, 85];
+  let colors7 = ['blue', 'red','yellow','hotpink'];
+  let borderColors7 = [];
+
+  let myChart7 = document.getElementById("myChart7").getContext('2d');
+
+  let chart7 = new Chart(myChart7,{
+    type: 'polarArea',
+    data:{
+      labels: labels7,
+      datasets: [{
+        data:data7,
+        backgroundColor: colors7,
+        borderColor: borderColors7,
+    hoverBackgroundColor: 'transparent',
+      }]
+    },
+
+    options:{
+      title: {
+          text:'',
+          diplay: true,
+        },
+        legend: {
+          display:true
+        },
+        startAngle: -1.4
+    },
+    scale:{
+      ticks: {
+        min: 0,
+        max: 100,
+      }
+    }
+
+
+  })
+  </script>
+<!-- end of fourth shit graph -->
+
+
+<div id="containerDog">
+<div id="descriptionDog">This is Yarí, Chica's dog.<br>She is here because we don't give a shit about her.</div>
+<img id="picDog" src="Yarì.jpeg"></img>
+</div>
+
+<div id="goodBye">Looking forward to shitting together again soon.</div>
+
+        </div>
+        <header>
+            <h1>Shit Happens. <br> <div id="solo">But we can flush it away.</div></h1>
+        </header>
+    </body>
+</html>
